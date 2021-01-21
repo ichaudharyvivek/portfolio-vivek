@@ -1,0 +1,35 @@
+/* Import Font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Roboto+Mono&display=swap");
+
+/* Variables */
+:root {
+  --bg-dark: #000000;
+  --bg-light: #101010;
+  --bg-gray: #161616;
+  --green: #009e66;
+  --slate: #dadada;
+  --light-slate: #9f9f9f;
+  --lightest-slate: #bcbcbc;
+
+  --font-sans: "Open Sans", sans-serif;
+  --font-mono: "Roboto Mono", monospace;
+
+  --fz-hd: 3rem;
+  --fz-sm-hd: 2rem;
+  --fz-sub-hd: 1.5rem;
+  --fz-prompt: 0.875rem;
+  --fz-footer: 0.75rem;
+  --fz-p-hd: 1.125rem;
+  --fz-p: 0.875rem;
+
+  --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Global classes */
+.highlight {
+  font-family: var(--font-mono);
+  color: var(--green);
+  font-size: var(--fz-prompt);
+  font-weight: 400;
+}

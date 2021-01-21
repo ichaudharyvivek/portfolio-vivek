@@ -1,0 +1,15 @@
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" width="472" height="472" viewBox="0 0 472 472">
+        <g id="ld_logo" transform="translate(-253 -1424)">
+            <rect id="frame" width="472" height="472" transform="translate(253 1424)" fill="none" />
+            <path id="hex"
+                d="M264.224,0a10,10,0,0,1,8.662,5l84.231,146a10,10,0,0,1,0,9.994L272.886,307a10,10,0,0,1-8.662,5H95.776a10,10,0,0,1-8.662-5L2.883,161a10,10,0,0,1,0-9.994L87.114,5a10,10,0,0,1,8.662-5Z"
+                transform="translate(266.115 1614.9) rotate(-30)" fill="none" stroke="#009e66" stroke-linecap="round"
+                stroke-width="20" />
+            <g id="nm" transform="translate(453.5 1599.5)">
+                <line id="left_v" x2="48" y2="137" fill="none" stroke="#009e66" stroke-linecap="round"
+                    stroke-width="20" />
+                <line id="right_v" x1="48" y2="137" transform="translate(49)" fill="none" stroke="#009e66"
+                    stroke-linecap="round" stroke-width="20" />
+            </g>
+        </g>
+</svg>
