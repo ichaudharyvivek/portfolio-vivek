@@ -7,6 +7,8 @@
   --bg-light: #101010;
   --bg-gray: #161616;
   --green: #009e66;
+  --light-green: #00c781;
+  --light-green-tint: #00c78156;
   --slate: #dadada;
   --light-slate: #9f9f9f;
   --lightest-slate: #bcbcbc;
@@ -26,10 +28,37 @@
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 /* Global classes */
 .highlight {
+  color: var(--green);
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.prompt {
   font-family: var(--font-mono);
   color: var(--green);
   font-size: var(--fz-prompt);
   font-weight: 400;
+}
+
+.container {
+  width: 95%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
 }
