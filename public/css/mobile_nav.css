@@ -1,0 +1,93 @@
+/* Hamburger */
+.header__menu span {
+  display: block;
+  background-color: var(--slate);
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: var(--transition);
+}
+
+.header__menu span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.header__menu a {
+  text-decoration: none;
+  color: var(--slate);
+  transition: var(--transition);
+}
+
+.header__menu a:hover {
+  color: white;
+}
+
+.header__menu input {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 25px;
+  right: 17px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+.header__menu span:first-child {
+  transform-origin: 0% 0%;
+}
+
+.header__menu span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* Transform all the slices of 
+   hamburger into a crossmark. */
+.header__menu input:checked ~ span {
+  opacity: 1;
+  transform: rotate(44deg) translate(0px, 0px);
+  background: var(--slate);
+}
+
+/* Hide the middle span */
+.header__menu input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/* Last span has turn of -ve deg */
+.header__menu input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(1px, 0.5px);
+}
+
+/* Mobile menu items */
+#header__mobile-menu {
+  position: absolute;
+  right: -100%;
+  margin: 0;
+  top: 0;
+  width: 35%;
+  min-width: 200px;
+  height: 100%;
+  padding: 100px 50px;
+  list-style-type: none;
+  background: var(--light-gray-tint);
+  transition: var(--transition);
+}
+
+#header__mobile-menu li {
+  padding: 10px 0;
+  color: var(--slate);
+  font-family: var(--font-mono);
+  font-size: var(--fz-p-hd);
+  margin-bottom: 1em;
+}
+
+/* Letting menu slide */
+.header__menu input:checked ~ ul {
+  right: 0 !important;
+}

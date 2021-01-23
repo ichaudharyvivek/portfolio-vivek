@@ -1,11 +1,12 @@
 /* Import Font */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;800&family=Roboto+Mono&display=swap");
 
 /* Variables */
 :root {
   --bg-dark: #000000;
   --bg-light: #101010;
   --bg-gray: #161616;
+  --light-gray-tint: #30303027;
   --green: #009e66;
   --light-green: #00c781;
   --light-green-tint: #00c78156;
@@ -16,13 +17,17 @@
   --font-sans: "Open Sans", sans-serif;
   --font-mono: "Roboto Mono", monospace;
 
-  --fz-hd: 3rem;
-  --fz-sm-hd: 2rem;
-  --fz-sub-hd: 1.5rem;
-  --fz-prompt: 0.875rem;
-  --fz-footer: 0.75rem;
-  --fz-p-hd: 1.125rem;
-  --fz-p: 0.875rem;
+  --fz-hd: 3rem; /* 48px */
+  --fz-sm-hd: 2rem; /* 32px */
+  --fz-sub-hd: 1.5rem; /* 24px */
+  --fz-prompt: 0.875rem; /* 14px */
+  --fz-footer: 0.75rem; /* 12px */
+  --fz-p-hd: 1.125rem; /* 18px */
+  --fz-p: 0.875rem; /* 14px */
+
+  --fw-normal: 400;
+  --fw-highlight: 500;
+  --fw-bold: 600;
 
   --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -31,12 +36,29 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  line-height: 1.3;
+  background-color: var(--bg-light);
 }
 
 *,
 *::after,
 *::before {
   box-sizing: inherit;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
 }
 
 /* Global classes */
@@ -50,7 +72,7 @@ html {
   font-family: var(--font-mono);
   color: var(--green);
   font-size: var(--fz-prompt);
-  font-weight: 400;
+  font-weight: var(--fw-normal);
 }
 
 .container {
