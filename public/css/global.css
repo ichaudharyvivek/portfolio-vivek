@@ -6,7 +6,7 @@
   --bg-dark: #000000;
   --bg-light: #101010;
   --bg-gray: #161616;
-  --light-gray-tint: #30303027;
+  --light-gray-tint: #3b3b3b27;
   --green: #009e66;
   --light-green: #00c781;
   --light-green-tint: #00c78156;
@@ -35,8 +35,8 @@
 
 html {
   font-size: 100%;
-  box-sizing: border-box;
   overflow-x: hidden;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
 

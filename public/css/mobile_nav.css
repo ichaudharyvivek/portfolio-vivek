@@ -67,19 +67,21 @@
 /* Mobile menu items */
 #header__mobile-menu {
   position: absolute;
-  right: -100%;
-  margin: 0;
+  right: 0;
   top: 0;
-  width: 35%;
-  min-width: 200px;
+  margin: 0;
+  width: 100px;
   height: 100%;
   padding: 100px 50px;
   list-style-type: none;
+  opacity: 0;
+  transform-origin: 0% 50%;
   background: var(--light-gray-tint);
   transition: var(--transition);
 }
 
 #header__mobile-menu li {
+  display: none;
   padding: 10px 0;
   color: var(--slate);
   font-family: var(--font-mono);
@@ -89,5 +91,10 @@
 
 /* Letting menu slide */
 .header__menu input:checked ~ ul {
-  right: 0 !important;
+  width: 250px !important;
+  opacity: 1 !important;
+}
+
+.header__menu input:checked ~ ul li {
+  display: block !important;
 }
