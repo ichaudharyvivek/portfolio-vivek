@@ -61,6 +61,16 @@ a:hover {
   text-decoration: none;
 }
 
+/* @media */
+/* On desktop sizes increase the font-size to 110% of root. */
+/* Mobile: 16px */
+/* Desktop & Tablets: 17.6px */
+@media (min-width: 651px) {
+  html {
+    font-size: 110%;
+  }
+}
+
 /* Global classes */
 .highlight {
   color: var(--green);

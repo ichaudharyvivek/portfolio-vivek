@@ -99,6 +99,10 @@ nav {
 }
 
 /* Desktop links */
+.header__links {
+  display: none;
+}
+
 .header__links a {
   color: var(--slate);
   font-family: var(--font-mono);
@@ -112,4 +116,14 @@ nav {
 
 .header__links a:hover {
   color: white;
+}
+
+/* @media for desktop screens */
+@media (min-width: 651px) {
+  .header__links {
+    display: block;
+  }
+  .header__menu {
+    display: none;
+  }
 }
