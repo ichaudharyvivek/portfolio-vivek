@@ -8,6 +8,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
+  z-index: 2;
   top: 0;
   left: 0;
   display: flex;
@@ -118,12 +119,57 @@ nav {
   color: white;
 }
 
-/* @media for desktop screens */
+/* ===================
+   Main Heading
+   =================== */
+
+main .d-flex {
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__heading {
+  width: fit-content;
+  margin: 0 auto;
+  font-family: var(--font-sans);
+}
+
+.main__heading h1 {
+  margin: 60% 0 0 0;
+  font-weight: var(--fw-bolder);
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.main__heading h3 {
+  text-align: center;
+  margin-top: 1em;
+  font-weight: var(--fw-bold);
+  font-size: var(--fz-sub-hd);
+}
+
+/* Cursor inside the typewriter animation */
+.txt-type > .txt {
+  border-right: 0.1rem solid white;
+}
+/* ===================
+   Media queries for 
+   desktop screens
+   =================== */
+
 @media (min-width: 651px) {
   .header__links {
     display: block;
   }
+
   .header__menu {
     display: none;
+  }
+
+  .main__heading h1 {
+    margin: 35% 0 0 0;
+    font-size: var(--fz-hd);
   }
 }
