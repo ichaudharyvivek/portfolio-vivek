@@ -2,7 +2,7 @@
 .header__menu span {
   display: block;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   background-color: var(--slate);
   width: 30px;
   height: 4px;
@@ -34,7 +34,7 @@
   right: 17px;
   cursor: pointer;
   opacity: 0;
-  z-index: 2;
+  z-index: 3;
   -webkit-touch-callout: none;
 }
 
@@ -68,6 +68,7 @@
 /* Mobile menu items */
 #header__mobile-menu {
   position: absolute;
+  z-index: 1;
   right: 0;
   top: 0;
   margin: 0;

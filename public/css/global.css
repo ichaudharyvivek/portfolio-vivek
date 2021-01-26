@@ -1,5 +1,5 @@
 /* Import Font */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;400;500;600;700&family=Roboto+Mono&display=swap");
 
 /* Variables */
 :root {
@@ -25,11 +25,11 @@
   --fz-p-hd: 1.125rem; /* 18px */
   --fz-p: 0.875rem; /* 14px */
 
+  --fw-light: 100;
   --fw-normal: 400;
   --fw-highlight: 500;
   --fw-bold: 600;
   --fw-bolder: 700;
-  --fw-boldest: 800;
 
   --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
