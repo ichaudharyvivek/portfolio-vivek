@@ -12,7 +12,7 @@
     <meta name="keywords" content="Software Developer Engineer" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/public/icons/favicon.svg" />
+    <link rel="icon" type="image/png" href="/public/images/favicon.svg" />
 
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="/public/css/about.css" />
@@ -26,12 +26,53 @@
         <span></span>
       </div>
     </nav>
+
     <main class="container">
       <div class="page__heading">
         <p>Get to know me</p>
         <h1>About Me</h1>
         <div class="animated-bar"></div>
       </div>
+
+      <div class="intro">
+        <div class="intro__img">
+          <img src="./public/images/vivek_img.jpg" alt="Vivek Chaudhary" />
+        </div>
+        <div class="intro__about">
+          <div class="intro__about-desc">
+            <p class="prompt">Who am i?</p>
+            <h1>I'm Vivek Chaudhary.</h1>
+            <h2>I build things for the web.</h2>
+            <p>
+              I'm a software engineer based in Mumbai, MH specializing in
+              building (and occasionally designing) exceptional websites,
+              applications and everything in between.
+            </p>
+          </div>
+
+          <div class="intro__about-detail">
+            <p><span class="hl">Name: </span>Vivek Kumar Chaudhary</p>
+            <p><span class="hl">Email: </span>chaudhary.vivekera@gmail.com</p>
+            <p><span class="hl">Age: </span><span id="forAge"></span></p>
+            <p><span class="hl">From: </span>Mumbai, MH, India</p>
+          </div>
+
+          <div class="intro__about-socials">
+            <a href="#" class="btn" download="" target="_blank"
+              >Download Resume</a
+            >
+          </div>
+        </div>
+      </div>
     </main>
+
+    <script>
+      // Dynamically add age
+      const date = new Date();
+      const age = document.querySelector("#forAge");
+      const yob = 1999;
+      let currentAge = date.getFullYear() - yob - 1;
+      age.innerText = `${currentAge}`;
+    </script>
   </body>
 </html>

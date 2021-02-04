@@ -9,10 +9,11 @@
   --light-gray-tint: #3b3b3b27;
   --green: #009e66;
   --light-green: #00c781;
+  --dark-green: #045a3c;
   --light-green-tint: #00c78156;
   --slate: #dadada;
   --light-slate: #9f9f9f;
-  --lightest-slate: #bcbcbc;
+  --lightest-slate: rgba(255, 255, 255, 0.08);
 
   --font-sans: "Open Sans", sans-serif;
   --font-mono: "Roboto Mono", monospace;
@@ -63,6 +64,12 @@ a:hover {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 /* @media */
 /* On desktop sizes increase the font-size to 110% of root. */
 /* Mobile: 16px */
@@ -93,8 +100,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .prompt {
-  font-family: var(--font-mono);
+  margin: 0 0 1.2em 0;
   color: var(--green);
+  font-family: var(--font-mono);
   font-size: var(--fz-prompt);
   font-weight: var(--fw-normal);
 }
@@ -107,4 +115,39 @@ body::-webkit-scrollbar-thumb {
 
 .d-flex {
   display: flex;
+}
+
+.btn:link,
+.btn:visited {
+  color: var(--slate);
+  padding: 0.7em 1.5em;
+  border-radius: 2em;
+  font-family: var(--font-sans);
+  font-size: var(--fz-p);
+  font-weight: var(--fw-highlight);
+  background-color: var(--green);
+  transition: var(--transition);
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--dark-green);
+}
+
+.btn-inv:link,
+.btn-inv:visited {
+  color: var(--green);
+  padding: 0.7em 1.5em;
+  border: 3px solid var(--green);
+  border-radius: 2em;
+  font-family: var(--font-sans);
+  font-size: var(--fz-p);
+  font-weight: var(--fw-highlight);
+  transition: var(--transition);
+}
+
+.btn-inv:hover,
+.btn-inv:active {
+  color: var(--slate);
+  background-color: var(--green);
 }

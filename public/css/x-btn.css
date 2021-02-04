@@ -5,7 +5,8 @@
    =================== */
 
 .x-btn {
-  position: absolute;
+  position: fixed;
+  z-index: 2;
   right: 20px;
   top: 30px;
   cursor: pointer;
