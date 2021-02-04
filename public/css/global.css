@@ -1,5 +1,5 @@
 /* Import Font */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;400;500;600;700&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;400;500;600;700;800&family=Roboto+Mono&display=swap");
 
 /* Variables */
 :root {
@@ -18,7 +18,7 @@
   --font-mono: "Roboto Mono", monospace;
 
   --fz-hd: 3rem; /* 48px */
-  --fz-sm-hd: 2rem; /* 32px */
+  --fz-sm-hd: 2.5rem; /* 32px */
   --fz-sub-hd: 1.5rem; /* 24px */
   --fz-prompt: 0.875rem; /* 14px */
   --fz-footer: 0.75rem; /* 12px */
@@ -28,8 +28,8 @@
   --fw-light: 100;
   --fw-normal: 400;
   --fw-highlight: 500;
-  --fw-bold: 600;
-  --fw-bolder: 700;
+  --fw-bold: 700;
+  --fw-bolder: 800;
 
   --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -71,6 +71,18 @@ a:hover {
   html {
     font-size: 110%;
   }
+}
+
+/* Change ScrollBar */
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #252525;
+  border: 4px solid transparent;
+  border-radius: 8px;
+  background-clip: padding-box;
 }
 
 /* Global classes */

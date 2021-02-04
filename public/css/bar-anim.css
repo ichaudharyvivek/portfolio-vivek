@@ -1,0 +1,55 @@
+@import "global.css";
+
+.animated-bar {
+  content: "";
+  display: block;
+  position: relative;
+  left: 0;
+  right: 0;
+  height: 4px;
+  width: 75px;
+  margin: 1.2em auto 0 auto;
+  background-color: var(--light-green);
+}
+
+.animated-bar::after,
+.animated-bar::before {
+  content: "";
+  width: 4px;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background-color: #101010;
+  -webkit-animation: barAnimation 3s linear infinite;
+  animation: barAnimation 3s linear infinite;
+}
+
+.animated-bar::before {
+  left: 8px;
+}
+
+.animated-bar::after {
+  left: 0;
+}
+
+@-webkit-keyframes barAnimation {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(75px);
+    transform: translateX(75px);
+  }
+}
+
+@keyframes barAnimation {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(75px);
+    transform: translateX(75px);
+  }
+}

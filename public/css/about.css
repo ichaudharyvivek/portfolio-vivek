@@ -1,0 +1,25 @@
+@import "global.css";
+@import "x-btn.css";
+@import "bar-anim.css";
+
+/* ===================
+   Main Heading
+   =================== */
+
+.page__heading p {
+  color: var(--light-slate);
+  text-align: center;
+  margin-top: 5em;
+  font-family: var(--font-mono);
+  font-size: var(--fz-footer);
+  font-weight: var(--fw-normal);
+}
+
+.page__heading h1 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--fz-sm-hd);
+  font-weight: var(--fw-bolder);
+}

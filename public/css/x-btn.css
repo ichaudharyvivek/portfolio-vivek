@@ -1,0 +1,42 @@
+@import "global.css";
+
+/* ===================
+   Exit Button @nav
+   =================== */
+
+.x-btn {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.x-btn span {
+  display: block;
+  background-color: var(--slate);
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  transform-origin: 4px 0px;
+}
+
+.x-btn span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.x-btn span:first-child {
+  transform-origin: 0% 0%;
+}
+
+.x-btn span:last-child {
+  transform-origin: 0% 100%;
+}
+
+.x-btn span {
+  opacity: 1;
+  transform: rotate(45deg) translate(0, 0);
+}
+
+.x-btn span:last-child {
+  transform: rotate(-45deg) translate(-8px, 7.5px);
+}
