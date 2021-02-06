@@ -1,0 +1,134 @@
+@import "global.css";
+@import "x-btn.css";
+@import "bar-anim.css";
+
+/* ===================
+   Main Heading
+   =================== */
+
+.page__heading p {
+  color: var(--light-slate);
+  text-align: center;
+  margin-top: 5em;
+  font-family: var(--font-mono);
+  font-size: var(--fz-prompt);
+  font-weight: var(--fw-normal);
+}
+
+.page__heading h1 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--fz-sm-hd);
+  font-weight: var(--fw-bolder);
+}
+
+/* ===================
+   Contact 
+   =================== */
+
+.container .d-flex {
+  flex-direction: column;
+  padding: 0 1em;
+}
+
+/* Contact message */
+/* 1st Part */
+.contact__msg h2 {
+  color: var(--slate);
+  margin-bottom: 0;
+  font-size: var(--fz-sub-hd);
+  font-family: var(--font-sans);
+  font-weight: var(--fw-bold);
+}
+
+.contact__msg p {
+  color: var(--light-slate);
+  line-height: 1.5;
+
+  text-align: left;
+  margin-bottom: 2em;
+  font-family: var(--font-sans);
+  font-size: var(--fz-p);
+  font-weight: var(--fw-normal);
+}
+
+/* Contact Details */
+/* 2nd Part */
+.contact__det h2 {
+  margin: 2.5em 0 0 0;
+  color: var(--slate);
+  font-family: var(--font-sans);
+  font-weight: var(--fw-bold);
+  font-size: var(--fz-sub-hd);
+}
+
+.contact__det ul {
+  list-style-type: none;
+  margin-top: 1.5em;
+  padding: 0;
+}
+
+.contact__det ul li {
+  margin: 0 0 1.5em 0;
+}
+
+.icon {
+  display: inline-block;
+  color: var(--light-green);
+  width: 40px;
+  height: 40px;
+}
+
+.icon ion-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.info-det {
+  display: inline-block;
+  margin-left: 1em;
+  border-left: 2px solid rgb(54, 54, 54);
+  padding-left: 1.5em;
+}
+
+.info-det h3 {
+  margin: 0 0 0.5em 0;
+  color: var(--slate);
+  font-family: var(--font-sans);
+  font-size: var(--fz-p);
+}
+
+.info-det p {
+  margin: 0;
+  color: var(--light-slate);
+  font-family: var(--font-sans);
+  font-weight: var(--fw-light);
+  font-size: var(--fz-p);
+}
+
+/* ===================
+   Media queries for 
+   desktop screens
+   =================== */
+
+@media (min-width: 651px) {
+  .container .d-flex {
+    flex-direction: row;
+    padding: 0 1em;
+    justify-content: space-evenly;
+  }
+
+  .contact__msg {
+    width: 35%;
+  }
+
+  .contact__det {
+    width: 35%;
+  }
+
+  .contact__det h2 {
+    margin-top: 0;
+  }
+}

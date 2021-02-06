@@ -310,7 +310,7 @@ footer p {
   .footer__mail::after {
     content: "";
     display: block;
-    width: 1.65px;
+    width: 1px;
     height: 90px;
     margin: 0 auto;
     background-color: var(--slate);
