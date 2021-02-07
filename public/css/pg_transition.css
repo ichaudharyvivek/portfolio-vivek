@@ -19,7 +19,7 @@
   bottom: -100%;
   z-index: 4;
   background-color: #161616;
-  transition: 0.3s ease-out;
+  transition: 0.4s ease-out;
 }
 
 .transition-home.is-active {
