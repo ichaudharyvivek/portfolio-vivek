@@ -22,7 +22,9 @@
   </head>
 
   <body>
-    <div class="splash">
+    <div id="transition" class="transition-home is-active"></div>
+
+    <!-- <div class="splash">
       <svg
         id="logo"
         xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +72,7 @@
           </g>
         </g>
       </svg>
-    </div>
+    </div> -->
 
     <header class="container">
       <nav class="d-flex">
@@ -126,18 +128,18 @@
           <span></span>
 
           <ul id="header__mobile-menu">
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/resume.html">Resume</a></li>
-            <li><a href="/work.html">Work</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/about.html" class="pg-tr">About</a></li>
+            <li><a href="/resume.html" class="pg-tr">Resume</a></li>
+            <li><a href="/work.html" class="pg-tr">Work</a></li>
+            <li><a href="/contact.html" class="pg-tr">Contact</a></li>
           </ul>
         </div>
 
         <div class="header__links">
-          <a href="/about.html">About</a>
-          <a href="/resume.html">Resume</a>
-          <a href="/work.html">Work</a>
-          <a href="/contact.html">Contact</a>
+          <a href="/about.html" class="pg-tr">About</a>
+          <a href="/resume.html" class="pg-tr">Resume</a>
+          <a href="/work.html" class="pg-tr">Work</a>
+          <a href="/contact.html" class="pg-tr">Contact</a>
         </div>
       </nav>
     </header>
@@ -256,5 +258,7 @@
     <script src="./public/javascript/home.js"></script>
     <script src="./public/javascript/particles.js"></script>
     <script src="./public/javascript/config.js"></script>
+    <script src="./public/javascript/transition.js"></script>
+    <script src="./public/javascript/session.js"></script>
   </body>
 </html>

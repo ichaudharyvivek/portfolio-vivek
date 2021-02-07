@@ -21,11 +21,13 @@
     <title>Contact | Vivek Chaudhary</title>
   </head>
   <body>
-    <nav class="container" onclick="location.href = '/';">
-      <div class="x-btn">
+    <div id="transition" class="transition is-active"></div>
+
+    <nav class="container">
+      <a href="/" class="pg-tr x-btn">
         <span></span>
         <span></span>
-      </div>
+      </a>
     </nav>
 
     <main class="container">
@@ -89,6 +91,17 @@
         </div>
       </div>
     </main>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <!-- Ionicons Script -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Page Transition -->
+    <script src="./public/javascript/transition.js"></script>
   </body>
 </html>

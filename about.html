@@ -16,15 +16,18 @@
 
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="/public/css/about.css" />
+    <link rel="stylesheet" href="./public/css/pg_transition.css" />
 
     <title>About | Vivek Chaudhary</title>
   </head>
   <body>
-    <nav class="container" onclick="location.href = '/';">
-      <div class="x-btn">
+    <div id="transition" class="transition is-active"></div>
+
+    <nav class="container">
+      <a href="/" class="pg-tr x-btn">
         <span></span>
         <span></span>
-      </div>
+      </a>
     </nav>
 
     <main class="container">
@@ -637,6 +640,7 @@
       </div>
     </main>
 
+    <script src="./public/javascript/transition.js"></script>
     <script>
       // Dynamically add age
       const date = new Date();
