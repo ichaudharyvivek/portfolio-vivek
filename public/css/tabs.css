@@ -1,0 +1,151 @@
+@import "global.css";
+
+/* Hide non active tabs */
+.hide {
+  display: none;
+}
+
+/* Tabs */
+.tabs {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-width: 600px;
+  margin: 2.5em auto;
+  box-sizing: border-box;
+  position: relative;
+  /* transition: var(--transition); */
+}
+
+/* Tab Headers */
+.tab-header {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid var(--lightest-slate);
+  color: var(--light-slate);
+  font-family: var(--font-mono);
+  font-size: var(--fz-footer);
+  overflow-x: scroll;
+  cursor: pointer;
+}
+
+/* Header scrollbar */
+.tab-header::-webkit-scrollbar {
+  height: 1em;
+  width: 1em;
+}
+
+.tab-header::-webkit-scrollbar-thumb {
+  background-color: #252525;
+  border: 4px solid transparent;
+  border-radius: 8px;
+  background-clip: padding-box;
+}
+
+.tab-header div {
+  padding: 1em 1em 1em 2em;
+  display: inline-block;
+}
+
+.tabs .tab-header > div:hover,
+.tabs .tab-header > div.active {
+  color: var(--light-green);
+  background: #161616;
+}
+
+/* Active tab indicator */
+.tabs .tab-indicator {
+  position: absolute;
+  top: 2.4em;
+  left: 0px;
+  width: 7.3em;
+  height: 1.5px;
+  background: var(--light-green);
+  border-radius: 1em;
+}
+
+/* Tab Content -- body*/
+.tab-content {
+  line-height: 1.5;
+  color: var(--light-slate);
+  text-align: left;
+  font-family: var(--font-sans);
+  font-size: var(--fz-p);
+  height: fit-content;
+  overflow: hidden;
+}
+
+.tab-content div {
+  transform: scale(0.95);
+  padding: 1em;
+  transition: var(--transition);
+}
+
+.tab-content div.active {
+  transform: scale(1);
+}
+
+.tab-content h3 {
+  margin: 0;
+  color: var(--slate);
+  font-size: var(--fz-p-hd);
+  font-weight: var(--fw-bold);
+}
+
+.tab-content .date {
+  margin: 0.5em 0 1em 0;
+  opacity: 0.7;
+  font-family: var(--font-mono);
+  font-size: var(--fz-footer);
+  font-weight: var(--fw-light);
+}
+
+/* Ul class inside tab-content */
+.ctn {
+  list-style: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.ctn .ctn-item {
+  margin: 0 0 1em 2em;
+}
+
+.ctn .ctn-item::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: var(--light-green);
+}
+
+/* Media for Desktop sizes */
+@media (min-width: 651px) {
+  /* Fix tabs */
+  .tabs {
+    flex-direction: row;
+    max-width: 700px;
+  }
+
+  .tab-header {
+    flex-direction: column;
+    width: 45%;
+    border-left: 1px solid var(--lightest-slate);
+    overflow-x: hidden;
+    margin-right: 2em;
+  }
+
+  /* Fix active status */
+  .tabs .tab-indicator {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 2.5em;
+  }
+
+  /* Fix content */
+  .tab-content div {
+    padding: 0;
+  }
+}

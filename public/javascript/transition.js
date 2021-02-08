@@ -4,7 +4,7 @@ window.onload = () => {
 
   setTimeout(() => {
     transition_el.classList.remove("is-active");
-  }, 400);
+  }, 300);
 
   for (let i = 0; i < anchors.length; i++) {
     const anchor = anchors[i];
@@ -16,7 +16,7 @@ window.onload = () => {
 
       setTimeout(() => {
         window.location.href = target;
-      }, 400);
+      }, 300);
     });
   }
 };

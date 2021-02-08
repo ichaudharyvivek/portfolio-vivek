@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/tabs.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="tabs">
+      <div class="tab-header">
+        <div class="active">Upstatement</div>
+        <div>Apple</div>
+        <div>Samsung</div>
+      </div>
+      <div class="tab-indicator"></div>
+      <div class="tab-content">
+        <div class="active">
+          <h3>Engineer <span class="highlight">@Upstatement</span></h3>
+          <p class="date">May 2018 - Present</p>
+          <ul class="ctn">
+            <li class="ctn-item">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum
+              similique quisquam officiis neque, cumque dignissimos architecto
+              nisi totam
+            </li>
+            <li class="ctn-item">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum
+              similique quisquam officiis neque, cumque dignissimos architecto
+              nisi totam
+            </li>
+            <li class="ctn-item">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum
+              similique quisquam officiis neque, cumque dignissimos architecto
+              nisi totam
+            </li>
+          </ul>
+        </div>
+
+        <div class="hide">
+          <h3>Engineer <span class="highlight">@Apple</span></h3>
+          <p class="date">May 2018 - Present</p>
+          <ul class="ctn">
+            <li class="ctn-item">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum
+              similique quisquam officiis neque, cumque dignissimos architecto
+              nisi totam
+            </li>
+            <li class="ctn-item">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum
+              similique quisquam officiis neque, cumque dignissimos architecto
+              nisi totam
+            </li>
+            <li class="ctn-item">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum
+              similique quisquam officiis neque, cumque dignissimos architecto
+              nisi totam
+            </li>
+          </ul>
+        </div>
+
+        <div class="hide">
+          <h3>Engineer <span class="highlight">@Samsung</span></h3>
+          <p class="date">May 2018 - Present</p>
+          <ul class="ctn">
+            <li class="ctn-item">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum
+              similique quisquam officiis neque, cumque dignissimos architecto
+              nisi totam
+            </li>
+            <li class="ctn-item">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum
+              similique quisquam officiis neque, cumque dignissimos architecto
+              nisi totam
+            </li>
+            <li class="ctn-item">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum
+              similique quisquam officiis neque, cumque dignissimos architecto
+              nisi totam
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- <script>
+      function _class(name) {
+        return document.getElementsByClassName(name);
+      }
+
+      let tabPanes = _class("tab-header")[0].getElementsByTagName("div");
+
+      for (let i = 0; i < tabPanes.length; i++) {
+        tabPanes[i].addEventListener("click", function () {
+          _class("tab-header")[0]
+            .getElementsByClassName("active")[0]
+            .classList.remove("active");
+          tabPanes[i].classList.add("active");
+
+          _class("tab-indicator")[0].style.top = `calc(80px + ${i * 50}px)`;
+
+          _class("tab-content")[0]
+            .getElementsByClassName("active")[0]
+            .classList.remove("active");
+          _class("tab-content")[0]
+            .getElementsByTagName("div")
+            [i].classList.add("active");
+        });
+      }
+    </script> -->
+  </body>
+</html>
