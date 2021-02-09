@@ -2,6 +2,11 @@
 @import "bar-anim.css";
 @import "x-btn.css";
 
+.container {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
 /* ===================
    Main Heading
    =================== */
@@ -22,4 +27,107 @@
   font-family: var(--font-sans);
   font-size: var(--fz-sm-hd);
   font-weight: var(--fw-bolder);
+}
+
+.pg-hd {
+  margin-bottom: 2em;
+}
+
+.fp {
+  color: var(--light-green);
+  margin: 1.5em 0 -1em 0;
+  font-family: var(--font-mono);
+  font-size: var(--fz-footer);
+}
+
+/* ===================
+   Other Projects
+   =================== */
+
+.extra_prj .pg-hd ion-icon:hover {
+  color: var(--light-green);
+  transition: var(--transition);
+}
+
+/* Other projects lists */
+.extra_prj-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em 0;
+  padding-bottom: 4em;
+}
+
+.extra_prj-item {
+  padding: 1.5em;
+  margin: 0 0 1.5em 0;
+  line-height: 1.5;
+  color: #bbbbbb;
+  font-family: var(--font-sans);
+  font-size: var(--fz-p);
+  background: #161616;
+  transition: var(--transition);
+}
+
+.extra_prj-item:hover {
+  transform: translateY(-1em);
+  border-bottom: 2px solid var(--light-green);
+}
+
+.extra_prj-link {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.extra_prj-link svg {
+  width: 50px;
+  height: 50px;
+  color: var(--light-green);
+  stroke-width: 1.5px;
+}
+
+.extra_prj-link .github-link svg {
+  width: 24px;
+  height: 24px;
+  color: var(--light-slate);
+  stroke-width: 2px;
+}
+
+.extra_prj-link .github-link svg:hover {
+  color: var(--light-green);
+}
+
+.extra_prj-title {
+  font-size: var(--fz-p-hd);
+  font-weight: var(--fw-bolder);
+}
+
+.extra_prj-tech {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.extra_prj-tech li {
+  display: inline-block;
+  padding-right: 1.5em;
+  color: var(--light-slate);
+  font-family: var(--font-mono);
+  font-size: var(--fz-footer);
+}
+
+/* Media Queries */
+@media (min-width: 651px) {
+  .extra_prj-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .extra_prj-item {
+    width: 32.5%;
+    /* min-width: 150px; */
+  }
 }
