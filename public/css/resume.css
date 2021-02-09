@@ -2,6 +2,10 @@
 @import "bar-anim.css";
 @import "x-btn.css";
 
+.container {
+  padding-left: 0.5em;
+}
+
 /* ===================
    Main Heading
    =================== */
@@ -22,4 +26,76 @@
   font-family: var(--font-sans);
   font-size: var(--fz-sm-hd);
   font-weight: var(--fw-bolder);
+}
+
+/* ===================
+   Education
+   =================== */
+
+.edu__card {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.edu__card .edu__card-item {
+  color: var(--slate);
+  padding: 1.5em;
+  font-family: var(--font-sans);
+  font-size: var(--fz-p-hd);
+  background: #161616;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.edu__card .edu__card-item:hover {
+  border-bottom: 2px solid var(--light-green);
+}
+
+.edu__card .edu__card-item {
+  font-size: 0.875em;
+  margin: 0;
+  margin-top: 2em;
+}
+
+.edu__card .edu__card-item h3 {
+  margin: 0;
+}
+.edu__card .edu__card-item h2 {
+  font-size: 1.3em;
+  margin: 0.5em 0 1.5em 0;
+}
+
+.edu__card-item .ad-info {
+  color: var(--light-slate);
+  opacity: 0.7;
+  margin: 0.5em 0;
+  font-family: var(--font-mono);
+  font-size: var(--fz-p);
+}
+
+/* Margin Top of all Classes */
+.wrk,
+.knsk,
+.ve {
+  margin-top: 7em;
+}
+
+/* Media for Desktop sizes */
+@media (min-width: 651px) {
+  .edu__card {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .edu__card-item {
+    width: 33.33%;
+  }
+
+  .edu__card-item:not(:last-child) {
+    margin-right: 1.5em;
+  }
 }

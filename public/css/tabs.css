@@ -7,11 +7,12 @@
 
 /* Tabs */
 .tabs {
-  color: white;
+  color: var(--slate);
   display: flex;
   flex-direction: column;
   width: 95%;
   max-width: 600px;
+  min-height: 250px;
   margin: 2.5em auto;
   box-sizing: border-box;
   position: relative;
@@ -57,33 +58,36 @@
 /* Active tab indicator */
 .tabs .tab-indicator {
   position: absolute;
-  top: 2.4em;
-  left: 0px;
-  width: 7.3em;
-  height: 1.5px;
-  background: var(--light-green);
   border-radius: 1em;
+  transition: var(--transition);
 }
 
 /* Tab Content -- body*/
 .tab-content {
-  line-height: 1.5;
   color: var(--light-slate);
-  text-align: left;
-  font-family: var(--font-sans);
-  font-size: var(--fz-p);
   height: fit-content;
+  position: relative;
   overflow: hidden;
+  line-height: 1.5;
+  text-align: left;
+  font-size: var(--fz-p);
+  font-family: var(--font-sans);
 }
 
 .tab-content div {
+  display: block;
+  position: absolute;
   transform: scale(0.95);
   padding: 1em;
-  transition: var(--transition);
+  visibility: hidden;
 }
 
 .tab-content div.active {
   transform: scale(1);
+  display: block;
+  position: relative !important;
+  visibility: visible;
+  transition: var(--transition);
 }
 
 .tab-content h3 {
@@ -125,20 +129,26 @@
   /* Fix tabs */
   .tabs {
     flex-direction: row;
-    max-width: 700px;
+    max-width: 900px;
   }
 
   .tab-header {
     flex-direction: column;
-    width: 45%;
+    width: 25%;
     border-left: 1px solid var(--lightest-slate);
+    border-bottom: none;
     overflow-x: hidden;
     margin-right: 2em;
+  }
+
+  .tab-content {
+    width: 65%;
   }
 
   /* Fix active status */
   .tabs .tab-indicator {
     position: absolute;
+    background: var(--light-green);
     top: 0;
     width: 2px;
     height: 2.5em;
