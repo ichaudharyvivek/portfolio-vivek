@@ -67,6 +67,7 @@
   font-size: var(--fz-p);
   background: #161616;
   transition: var(--transition);
+  cursor: pointer;
 }
 
 .extra_prj-item:hover {
