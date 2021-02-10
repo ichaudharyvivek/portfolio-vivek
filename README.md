@@ -1,4 +1,4 @@
-# My Personal Portfolio
+# Portfolio Website
 
 >Personal Portfolio developed with plain HTML, CSS and JS. You can find it [here](https://vivekchaudhary.netlify.app/ "Personal Portfolio").
 
