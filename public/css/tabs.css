@@ -1,4 +1,4 @@
-@import "global.css";
+@import 'global.css';
 
 /* Hide non active tabs */
 .hide {
@@ -118,7 +118,7 @@
 }
 
 .ctn .ctn-item::before {
-  content: "▹";
+  content: '▹';
   position: absolute;
   left: 0px;
   color: var(--light-green);
@@ -149,7 +149,7 @@
   .tabs .tab-indicator {
     position: absolute;
     background: var(--light-green);
-    top: 0;
+    top: 10px;
     width: 2px;
     height: 2.5em;
   }
