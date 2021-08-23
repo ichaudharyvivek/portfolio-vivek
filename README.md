@@ -14,3 +14,4 @@ If you liked the design, feel free to `git clone` and change it according to you
 
 - Re-Create site using React.
 - Make dynamic template which everyone can use.
+- Use Next for server side rendering for dynamic data.
